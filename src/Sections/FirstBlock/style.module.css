@@ -1,0 +1,46 @@
+.root {
+    text-align: center;
+    background: #112 url(./assets/brickWall.jpeg)  center no-repeat;
+    background-size:cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    position: relative;
+}
+
+.subtitle {
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 2px;
+    border-bottom: solid white 2px;
+    padding: 4px 10px;
+    transform: translateY(20px);  
+}
+
+.scrollIndicatorContainer {
+    position: absolute;
+    bottom: 2rem;
+}
+
+@media screen and (min-width: 650px) {
+    .subtitle {
+        transform: translateY(20px);
+    }
+    .root b{
+        font: 400 10rem "Neonderthaw";
+    }
+}
+
+@media screen and (min-width: 1045px) {
+    .subtitle {
+        font-size: 1.5rem;
+        transform: translateY(-20px);
+    }
+    .root b{
+        font: 400 14rem "Neonderthaw";
+    }
+}
