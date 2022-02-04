@@ -49,3 +49,15 @@
         text-shadow: inherit;
     }
 }
+
+@media screen and (min-width: 650px) {
+    .root{
+        font: 400 10rem "Neonderthaw";
+    }
+}
+
+@media screen and (min-width: 1045px) {
+    .root{
+        font: 400 14rem "Neonderthaw";
+    }
+}
