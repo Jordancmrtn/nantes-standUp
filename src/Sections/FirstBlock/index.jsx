@@ -1,5 +1,5 @@
 import NeonTitle from '../../Common/NeonTitle';
-import ScrollIndicator from '../../Common/scrollIndicator';
+import ScrollIndicator from '../../Common/ScrollIndicator';
 
 import style from './style.module.css';
 
