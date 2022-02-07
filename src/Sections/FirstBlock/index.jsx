@@ -7,7 +7,7 @@ const FirstBlock = () => {
   return(
         <div className={style.root}>
             <NeonTitle/>
-            <p className={style.subtitle}>Les scènes nantaise !</p>
+            <p className={style.subtitle}>Les scènes nantaises !</p>
             <div className={style.scrollIndicatorContainer}>
                 <ScrollIndicator/>
             </div>
