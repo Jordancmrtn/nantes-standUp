@@ -1,0 +1,65 @@
+.root {
+    padding: 0 74px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+    top: 0;
+    background-color: var(--header-color);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.rootScrolled {
+    background-color: var(--header-hidden-color);
+    position: fixed;
+    margin: 20px auto 0 auto;
+}
+
+.header {
+    height: 80px;
+    border-radius: 0px;
+    background-color: var(--header-hidden-color);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.fixed {
+    background-color: var(--header-color);
+    border-radius: 5px;
+    animation: blur-in 500ms 0.4s forwards; /* Important */
+}
+
+/* Let's define an animation: */
+@keyframes blur-in {
+  from {
+    backdrop-filter: saturate(100%) blur(0px);
+  }
+  to {
+    backdrop-filter:saturate(180%) blur(10px);
+  }
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+.icon {
+    transform: rotate(-45deg);
+    height: 70%;
+}
+
