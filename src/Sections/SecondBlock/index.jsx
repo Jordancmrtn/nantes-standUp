@@ -8,7 +8,10 @@ const SecondBlock = (props) => {
 
   return (
     <div className={style.root}>
-    <p>Nous sommes le {dateOfTheDay}</p>
+      <div className={style.dateContainer}>
+        <p className={style.dateInfo}>Nous sommes le </p>
+        {dateOfTheDay}
+      </div>
     </div>
   );
 };

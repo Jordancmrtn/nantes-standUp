@@ -1,5 +1,20 @@
 .root {
     height: 100vh;
+    padding-top: 9rem;
     background-color: black;
     color: white;
+    box-sizing: border-box;
+}
+
+.dateContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.dateInfo {
+    font-weight: normal;
 }
