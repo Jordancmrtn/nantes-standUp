@@ -1,16 +1,17 @@
 import { useState } from 'react';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import ComedyClubCard from '../../Common/ComedyClubCard';
+import Toggle from '../../Common/Toggle';
 import ComedyClubs from "../../data.json"
 
 import style from './style.module.css';
 
-const SecondBlock = (props) => {
-  const [displayBy, setDisplayBy] = useState('day')
+const SecondBlock = () => {
+  const [checked, setChecked] = useState(false)
 
   const dateOfTheDay = new Date().toLocaleString('fr-fr', { formatMatcher: 'best fit', weekday: 'long', month: 'long', day: 'numeric' });
   const comedyClubsOfTheDay = ComedyClubs.filter(comedyClub => comedyClub.day.includes(new Date().toLocaleString('fr-fr', { formatMatcher: 'best fit', weekday: 'long' })))
-  const comedyClubToDisplay = displayBy === "all" ? ComedyClubs : comedyClubsOfTheDay
+  const comedyClubToDisplay = checked ? ComedyClubs : comedyClubsOfTheDay
 
   return (
     <div className={style.root}>
@@ -25,7 +26,7 @@ const SecondBlock = (props) => {
           ))
         }
       </div>
-      <button onClick={ () => displayBy === "day" ? setDisplayBy("all") : setDisplayBy("day") }>TEST POUR CHANGER</button>
+      <Toggle checked={checked} onChange={  () => {setChecked(!checked)}}/>
       <div style={{height: '400px', width: '100%', marginTop: "32px", backgroundColor: 'gold', overflow: 'hidden'}}>
         <MapContainer center={[47.191, -1.55]} minZoom={14} maxZoom={19} zoom={14} scrollWheelZoom={true}>
           <TileLayer
