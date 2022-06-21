@@ -10,8 +10,8 @@ const ComedyClubCard = ({ name, address, instagram, tickets, hour, place }) => {
       {name}
       {place}
       {address}
-      {instagram && <a href={instagram} target="_blank" rel="noreferrer"><Icon type="INSTAGRAM" color='white'/></a>}
-      {tickets && <a href={tickets} target="_blank" rel="noreferrer"><Icon type="TICKET" color='white'/></a>}
+      {instagram && <a href={instagram} target="_blank" rel="noreferrer"><Icon type="INSTAGRAM" color='white' className={style.icon} /></a>}
+      {tickets && <a href={tickets} target="_blank" rel="noreferrer"><Icon type="TICKET" color='white' className={style.icon}/></a>}
       {hour}
     </div>
   )
