@@ -1,3 +1,7 @@
+.container {
+    position: relative;
+}
+
 .root{
     transform: rotate(-8deg) translateX(-10px);
     font: 400 5rem "Neonderthaw";

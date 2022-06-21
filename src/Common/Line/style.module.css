@@ -1,14 +1,15 @@
 .root {
     position: fixed;
-    top: 0;
+    top: 10vh;
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    text-align: center;
     z-index: 999;
 }
 
-svg {
+.svgLine {
     display: inline-block;
     height: 100%;
+    width: 100%;
 }
