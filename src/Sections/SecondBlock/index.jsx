@@ -9,8 +9,8 @@ const SecondBlock = (props) => {
 
   const dateOfTheDay = new Date().toLocaleString('fr-fr', { formatMatcher: 'best fit', weekday: 'long', month: 'long', day: 'numeric' });
   const comedyClubsOfTheDay = ComedyClubs.filter(comedyClub => comedyClub.day.includes(new Date().toLocaleString('fr-fr', { formatMatcher: 'best fit', weekday: 'long' })))
-  const truc = displayBy === "all" ? ComedyClubs : comedyClubsOfTheDay
-  
+  const comedyClubToDisplay = displayBy === "all" ? ComedyClubs : comedyClubsOfTheDay
+
   return (
     <div className={style.root}>
       <p className={style.dateContainer}>
@@ -36,7 +36,7 @@ const SecondBlock = (props) => {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           {
-            truc.map(comedyClub => (
+            comedyClubToDisplay.map(comedyClub => (
             <Marker position={comedyClub.position}>
               <Popup>
                 {comedyClub.name}
