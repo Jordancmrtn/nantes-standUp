@@ -5,11 +5,12 @@ import ComedyClubs from "../../data.json"
 import style from './style.module.css';
 
 const SecondBlock = (props) => {
-  const [coucou, setCoucou] = useState('day')
+  const [displayBy, setDisplayBy] = useState('day')
 
   const dateOfTheDay = new Date().toLocaleString('fr-fr', { formatMatcher: 'best fit', weekday: 'long', month: 'long', day: 'numeric' });
   const comedyClubsOfTheDay = ComedyClubs.filter(comedyClub => comedyClub.day.includes(new Date().toLocaleString('fr-fr', { formatMatcher: 'best fit', weekday: 'long' })))
-  const truc = coucou === "all" ? ComedyClubs : comedyClubsOfTheDay
+  const truc = displayBy === "all" ? ComedyClubs : comedyClubsOfTheDay
+  
   return (
     <div className={style.root}>
       <p className={style.dateContainer}>
@@ -27,7 +28,7 @@ const SecondBlock = (props) => {
           ))
         }
       </div>
-      <button onClick={ () => coucou === "day" ? setCoucou("all") : setCoucou("day") }>TEST POUR CHANGER</button>
+      <button onClick={ () => displayBy === "day" ? setDisplayBy("all") : setDisplayBy("day") }>TEST POUR CHANGER</button>
       <div style={{height: '400px', width: '100%', marginTop: "32px", backgroundColor: 'gold', overflow: 'hidden'}}>
         <MapContainer center={[47.191, -1.55]} minZoom={14} maxZoom={19} zoom={14} scrollWheelZoom={true}>
           <TileLayer
