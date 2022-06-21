@@ -1,6 +1,6 @@
 .root {
     height: 100vh;
-    padding-top: 4rem;
+    padding-top: 2rem;
     background-color: black;
     color: white;
     box-sizing: border-box;
@@ -23,4 +23,5 @@
     padding: 8px 20px;
     box-sizing: border-box;
     border-radius: 5px;
+    margin-top: 12px;
 }

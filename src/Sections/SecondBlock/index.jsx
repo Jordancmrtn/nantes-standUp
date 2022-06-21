@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
+import ComedyClubCard from '../../Common/ComedyClubCard';
 import ComedyClubs from "../../data.json"
 
 import style from './style.module.css';
@@ -13,18 +14,14 @@ const SecondBlock = (props) => {
 
   return (
     <div className={style.root}>
+      <p>Le programme du</p>
       <p className={style.dateContainer}>
         {dateOfTheDay}
       </p>
       <div>
         {
           comedyClubsOfTheDay.map(comedyClub => (
-            <div>
-              {comedyClub.name}
-              {comedyClub.adress}
-              {comedyClub.instagram}
-              {comedyClub.hour}
-            </div>
+            <ComedyClubCard name={comedyClub.name} place={comedyClub.place} instagram={comedyClub.instagram} tickets={comedyClub.tickets} adddress={comedyClub.adddress} hour={comedyClub.hour}/>
           ))
         }
       </div>
