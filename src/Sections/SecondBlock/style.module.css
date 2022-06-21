@@ -23,5 +23,54 @@
     padding: 8px 20px;
     box-sizing: border-box;
     border-radius: 5px;
-    margin-top: 12px;
+    margin: 12px 0;
+    color: #fee;
+    animation: blink linear infinite 2s;
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe, 0 0 0rem #bc13fe, 0 0 0rem #bc13fe, inset 0 0 0.5rem #bc13fe
+}
+
+.toggleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.comedyClubCardContainer {
+    margin-bottom: 24px;
+}
+
+@media screen and (min-width: 650px) {
+    .toggleContainer {
+        flex-direction: row;
+    }
+}
+
+@keyframes blink {
+    78% {
+        box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe, 0 0 0rem #bc13fe, 0 0 0rem #bc13fe, inset 0 0 0.5rem #bc13fe
+    }
+    79%{
+        box-shadow: 0 0 0.2rem #fff0, 0 0 0.2rem #fff0, 0 0 2rem #2d0b3b, 0 0 0rem #2d0b3b, 0 0 0rem #2d0b3b, inset 0 0 0.5rem #2d0b3b;
+    }
+    80% {
+        box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe, 0 0 0rem #bc13fe, 0 0 0rem #bc13fe, inset 0 0 0.5rem #bc13fe
+    }
+    81% {
+        box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe, 0 0 0rem #bc13fe, 0 0 0rem #bc13fe, inset 0 0 0.5rem #bc13fe
+    }
+    82% {
+        box-shadow: 0 0 0.2rem #fff0, 0 0 0.2rem #fff0, 0 0 2rem #2d0b3b, 0 0 0rem #2d0b3b, 0 0 0rem #2d0b3b, inset 0 0 0.5rem #2d0b3b;
+    }
+    83% {
+        box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe, 0 0 0rem #bc13fe, 0 0 0rem #bc13fe, inset 0 0 0.5rem #bc13fe
+    }
+    92% {
+        box-shadow: 0 0 0.2rem #fff0, 0 0 0.2rem #fff0, 0 0 2rem #2d0b3b, 0 0 0rem #2d0b3b, 0 0 0rem #2d0b3b, inset 0 0 0.5rem #2d0b3b;
+    }
+    92.5% {
+        box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe, 0 0 0rem #bc13fe, 0 0 0rem #bc13fe, inset 0 0 0.5rem #bc13fe
+
+    }
 }

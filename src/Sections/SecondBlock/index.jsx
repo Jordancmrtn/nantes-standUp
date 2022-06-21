@@ -14,19 +14,22 @@ const SecondBlock = () => {
   const comedyClubToDisplay = checked ? ComedyClubs : comedyClubsOfTheDay
 
   return (
-    <div className={style.root}>
+    <section className={style.root}>
       <p>Le programme du</p>
-      <p className={style.dateContainer}>
-        {dateOfTheDay}
-      </p>
-      <div>
+      <div className={style.dateContainer}>
+        <p>{dateOfTheDay}</p>
+      </div>
+      <div className={style.comedyClubCardContainer}>
         {
           comedyClubsOfTheDay.map((comedyClub, id) => (
             <ComedyClubCard key={id} name={comedyClub.name} place={comedyClub.place} instagram={comedyClub.instagram} tickets={comedyClub.tickets} adddress={comedyClub.adddress} hour={comedyClub.hour}/>
           ))
         }
       </div>
-      <Toggle checked={checked} onChange={  () => {setChecked(!checked)}}/>
+      <div className={style.toggleContainer}>
+        <p>Afficher tout les comedy clubs</p>
+        <Toggle checked={checked} onChange={  () => {setChecked(!checked)}}/>
+      </div>
       <div style={{height: '400px', width: '100%', marginTop: "32px", backgroundColor: 'gold', overflow: 'hidden'}}>
         <MapContainer center={[47.191, -1.55]} minZoom={14} maxZoom={19} zoom={14} scrollWheelZoom={true}>
           <TileLayer
@@ -39,7 +42,7 @@ const SecondBlock = () => {
               <Popup>
                 {comedyClub.name}
                   <br/>
-                {comedyClub.adress}
+                {comedyClub.address}
               </Popup>
             </Marker>
             ))
@@ -47,7 +50,7 @@ const SecondBlock = () => {
         </MapContainer>
         
       </div>
-    </div>
+    </section>
   );
 };
 
