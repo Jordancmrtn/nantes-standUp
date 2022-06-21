@@ -20,8 +20,8 @@ const SecondBlock = (props) => {
       </p>
       <div>
         {
-          comedyClubsOfTheDay.map(comedyClub => (
-            <ComedyClubCard name={comedyClub.name} place={comedyClub.place} instagram={comedyClub.instagram} tickets={comedyClub.tickets} adddress={comedyClub.adddress} hour={comedyClub.hour}/>
+          comedyClubsOfTheDay.map((comedyClub, id) => (
+            <ComedyClubCard key={id} name={comedyClub.name} place={comedyClub.place} instagram={comedyClub.instagram} tickets={comedyClub.tickets} adddress={comedyClub.adddress} hour={comedyClub.hour}/>
           ))
         }
       </div>
@@ -33,8 +33,8 @@ const SecondBlock = (props) => {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           {
-            comedyClubToDisplay.map(comedyClub => (
-            <Marker position={comedyClub.position}>
+            comedyClubToDisplay.map((comedyClub, id) => (
+            <Marker position={comedyClub.position} key={id}>
               <Popup>
                 {comedyClub.name}
                   <br/>
