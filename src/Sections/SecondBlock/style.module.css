@@ -12,14 +12,36 @@
     flex-direction: column;
 }
 
+.dateAndIllustrationContainer {
+    display: flex;
+    width: 100%;
+}
+
+.ticketIllustration {
+    display: none;
+}
+
 .dateContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.catchline {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.date {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.4rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: bold;
-    border: solid 2px;
+    border: solid 4px;
     padding: 8px 20px;
     box-sizing: border-box;
     border-radius: 5px;
@@ -42,6 +64,14 @@
 }
 
 @media screen and (min-width: 650px) {
+    .ticketIllustration {
+        display: block;
+        height: 38vw;
+        max-height: 28vw;
+    }
+    .date {
+        font-size: 3rem;
+    }
     .toggleContainer {
         flex-direction: row;
     }

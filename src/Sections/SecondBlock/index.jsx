@@ -2,7 +2,9 @@ import { useState } from 'react';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import ComedyClubCard from '../../Common/ComedyClubCard';
 import Toggle from '../../Common/Toggle';
-import ComedyClubs from "../../data.json"
+import ComedyClubs from "../../data.json";
+import Test from './assets/test.svg';
+
 
 import style from './style.module.css';
 
@@ -15,9 +17,14 @@ const SecondBlock = () => {
 
   return (
     <section className={style.root}>
-      <p>Le programme du</p>
-      <div className={style.dateContainer}>
-        <p>{dateOfTheDay}</p>
+      <div className={style.dateAndIllustrationContainer}>
+        <img src={Test} alt="ticket illustration" className={style.ticketIllustration} />
+        <div className={style.dateContainer}>
+          <p className={style.catchline}>Et ce soir ?</p>
+          <div className={style.date}>
+            <p>{dateOfTheDay}</p>
+          </div>
+        </div>
       </div>
       <div className={style.comedyClubCardContainer}>
         {
