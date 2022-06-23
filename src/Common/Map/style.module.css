@@ -2,4 +2,19 @@
     height: 400px;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.toggleContainer {
+    position: absolute;
+    z-index: 100000;
+    background: #0000008c;
+    padding: 8px;
+    border-radius: 4px;
+    bottom: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
