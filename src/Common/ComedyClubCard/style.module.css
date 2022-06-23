@@ -1,7 +1,55 @@
+.cardContainer {
+   width: 250px;
+   padding: 12px;
+   box-sizing: border-box;
+   border-radius: 4px; 
+   background-color: white;
+   color: black;
+}
+
+.cardContainer img {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.instagramAndTicketContainer {
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 12px;
+}
+
+.ticketsContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+}
+
+.ticketsContainer svg {
+    transform: rotate(-30deg);
+}
+
+.ticketsContainer svg:hover {
+    transform: rotate(-30deg) scale(1.2);
+}
+
 .icon {
     height: 20px;
+    transition: all .2s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.2);
 }
 
 .icon path {
-    fill: white;
+    fill: black;
+}
+
+@media screen and (min-width: 650px) {
+    .cardContainer {
+        width: 300px;
+    }
 }
