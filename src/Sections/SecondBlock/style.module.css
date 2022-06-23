@@ -1,5 +1,4 @@
 .root {
-    height: 100vh;
     padding-top: 2rem;
     background-color: black;
     color: white;
@@ -12,25 +11,17 @@
     flex-direction: column;
 }
 
-.dateAndIllustrationContainer {
-    display: flex;
-    width: 100%;
-}
-
-.ticketIllustration {
-    display: none;
-}
-
 .dateContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 32px;
 }
 
 .catchline {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-style: italic;
 }
 
@@ -39,7 +30,7 @@
     justify-content: center;
     align-items: center;
     gap: 0.4rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     border: solid 4px;
     padding: 8px 20px;
@@ -61,19 +52,21 @@
 
 .comedyClubCardContainer {
     margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 @media screen and (min-width: 650px) {
-    .ticketIllustration {
-        display: block;
-        height: 38vw;
-        max-height: 28vw;
-    }
     .date {
         font-size: 3rem;
     }
     .toggleContainer {
         flex-direction: row;
+    }
+    .comedyClubCardContainer {
+        flex-direction: row;
+        gap: 32px;
     }
 }
 

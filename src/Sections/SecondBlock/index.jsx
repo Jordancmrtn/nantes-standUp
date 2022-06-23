@@ -3,7 +3,6 @@ import ComedyClubCard from '../../Common/ComedyClubCard';
 import Map from '../../Common/Map';
 import Toggle from '../../Common/Toggle';
 import ComedyClubs from "../../data.json";
-import Test from './assets/test.svg';
 
 
 import style from './style.module.css';
@@ -17,19 +16,16 @@ const SecondBlock = () => {
 
   return (
     <section className={style.root}>
-      <div className={style.dateAndIllustrationContainer}>
-        <img src={Test} alt="ticket illustration" className={style.ticketIllustration} />
-        <div className={style.dateContainer}>
-          <p className={style.catchline}>Et ce soir ?</p>
-          <div className={style.date}>
-            <p>{dateOfTheDay}</p>
-          </div>
+      <div className={style.dateContainer}>
+        <p className={style.catchline}>Et ce soir ?</p>
+        <div className={style.date}>
+          <p>{dateOfTheDay}</p>
         </div>
       </div>
       <div className={style.comedyClubCardContainer}>
         {
           comedyClubsOfTheDay.map((comedyClub, id) => (
-            <ComedyClubCard key={id} name={comedyClub.name} place={comedyClub.place} instagram={comedyClub.instagram} tickets={comedyClub.tickets} adddress={comedyClub.adddress} hour={comedyClub.hour}/>
+            <ComedyClubCard key={id} name={comedyClub.name} place={comedyClub.place} instagram={comedyClub.instagram} tickets={comedyClub.tickets} address={comedyClub.address} hour={comedyClub.hour} info={comedyClub.info}/>
           ))
         }
       </div>
