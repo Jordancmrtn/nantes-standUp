@@ -62,7 +62,7 @@
     "place": "Bar Dock Yard",
     "address": "Quai des Antilles, 44200 Nantes",
     "instagram": "https://www.instagram.com/westsidenantes/?hl=fr",
-    "tickets": "Entrée libre sortie au chapeau",
+    "infos": "Entrée libre sortie au chapeau",
     "day": ["mercredi"],
     "hour": "20h30"
   },
@@ -72,7 +72,7 @@
     "place": "Bar La Maison Café",
     "address": "4 Rue Lebrun, 44000 Nantes",
     "instagram": "https://www.instagram.com/legrenierablagues/?hl=fr",
-    "tickets": "Entrée libre sortie au chapeau",
+    "infos": "Entrée libre sortie au chapeau",
     "day": ["mardi"],
     "hour": "20h00"
   },
