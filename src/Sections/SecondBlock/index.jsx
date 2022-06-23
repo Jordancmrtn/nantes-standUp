@@ -29,11 +29,7 @@ const SecondBlock = () => {
           ))
         }
       </div>
-      <div className={style.toggleContainer}>
-        <p>Afficher tout les comedy clubs</p>
-        <Toggle checked={checked} onChange={  () => {setChecked(!checked)}}/>
-      </div>
-      <Map comedyClubToDisplay={comedyClubToDisplay}/>
+      <Map comedyClubToDisplay={comedyClubToDisplay} setChecked={setChecked} checked={checked} />
     </section>
   );
 };
