@@ -20,7 +20,7 @@
   },
   {
     "name": "Lundi de merde",
-    "position": [47.214388509248344, -1.5535395153434786],
+    "position": [47.21403505768024, -1.553496599990128],
     "place": "Bar le Poulp'",
     "address": "2 Rue Léon Maître, 44000 Nantes",
     "tickets": "https://www.eventbrite.ca/e/lundi-de-merde-le-dernier-avant-lete-tickets-369071251047",
@@ -30,7 +30,7 @@
   },
   {
     "name": "Nouvelles Blagues",
-    "position": [47.2143759143118, -1.5542009846565212],
+    "position": [47.213837237985665, -1.5541710004037412],
     "place": "Bar le Jungle'",
     "address": "2 All. Duguay Trouin, 44000 Nantes",
     "tickets": "https://www.eventbrite.com/e/billets-nouveau-nouvelles-blagues-3-jungle-nantes-337153865287",
@@ -68,7 +68,7 @@
   },
   {
     "name": "Le Grenier à blagues",
-    "position": [47.220425281385495, -1.5495375437756793],
+    "position": [47.22030101171824, -1.5495446131077746],
     "place": "Bar La Maison Café",
     "address": "4 Rue Lebrun, 44000 Nantes",
     "instagram": "https://www.instagram.com/legrenierablagues/?hl=fr",
@@ -98,7 +98,7 @@
   },
   {
     "name": "La Pause Stand Up",
-    "position": [47.21370623397828, -1.5478484726117154],
+    "position": [47.21356546755969, -1.5478605309951945],
     "place": "Théâtre du Sphinx",
     "address": "45 Rue la Tour d'Auvergne, 44200 Nantes",
     "instagram": "https://www.instagram.com/lapause.standup/?hl=fr",
