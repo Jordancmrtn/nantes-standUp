@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import ComedyClubCard from '../../Common/ComedyClubCard';
+import Map from '../../Common/Map';
 import Toggle from '../../Common/Toggle';
 import ComedyClubs from "../../data.json";
 import Test from './assets/test.svg';
@@ -37,26 +37,7 @@ const SecondBlock = () => {
         <p>Afficher tout les comedy clubs</p>
         <Toggle checked={checked} onChange={  () => {setChecked(!checked)}}/>
       </div>
-      <div style={{height: '400px', width: '100%', marginTop: "32px", backgroundColor: 'gold', overflow: 'hidden'}}>
-        <MapContainer center={[47.191, -1.55]} minZoom={14} maxZoom={19} zoom={14} scrollWheelZoom={true}>
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          {
-            comedyClubToDisplay.map((comedyClub, id) => (
-            <Marker position={comedyClub.position} key={id}>
-              <Popup>
-                {comedyClub.name}
-                  <br/>
-                {comedyClub.address}
-              </Popup>
-            </Marker>
-            ))
-          }
-        </MapContainer>
-        
-      </div>
+      <Map comedyClubToDisplay={comedyClubToDisplay}/>
     </section>
   );
 };
