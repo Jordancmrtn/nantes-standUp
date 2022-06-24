@@ -1,10 +1,9 @@
+import classNames from 'classnames';
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 
 import Button from '../Button';
 
 import style from './style.module.css';
-import classNames from 'classnames';
 
 const Header = (props) => {
 
@@ -31,7 +30,7 @@ const Header = (props) => {
                             Les lieux
                         </li>
                         <li>
-                            Le programme
+                            Carte
                         </li>
                         <li>
                             Infos pratiques
@@ -50,7 +49,7 @@ const Header = (props) => {
                 </div>  
             <div className={style.menuItems}>
                 <li><a href="#">Les lieux</a></li>
-                <li><a href="#">Le programme</a></li>
+                <li><a href="#">Carte</a></li>
                 <li><a href="#">Infos pratiques</a></li>
                 <li><Button outlined label="Et ce soir ?" icon="TICKET" className={style.button} iconClassName={style.icon}/></li>
             </div>
@@ -58,7 +57,5 @@ const Header = (props) => {
       </>
   );
 };
-
-Header.propTypes = {};
 
 export default Header;
