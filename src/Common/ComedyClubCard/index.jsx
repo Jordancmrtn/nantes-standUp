@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
 import Icon from '../Icon';
-import Test from './assets/test.jpeg'
+
+import images from './assets'
 
 import style from './style.module.css';
 
-const ComedyClubCard = ({ name, address, instagram, tickets, hour, place, info }) => {
+const ComedyClubCard = ({ name, address, instagram, tickets, hour, place, info, id }) => {
   return (
     <div className={style.cardContainer}>
-      <img src={Test} alt="test"/>
+      <img src={images[id]} alt="test"/>
       <b>{name}{hour && ` - ${hour}`}</b> <br/>
       {place} <br/>
       {address} <br/>
