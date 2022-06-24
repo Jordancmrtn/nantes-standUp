@@ -1,10 +1,25 @@
 import PropTypes from 'prop-types'
 import Toggle from '../Toggle'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
+import * as L from "leaflet";
 
 import style from './style.module.css'
 
-const Map = ({comedyClubToDisplay, checked, setChecked}) => {
+const Map = ({ comedyClubToDisplay, checked, setChecked }) => {
+  const LeafIcon = L.Icon.extend({
+    options: {}
+  });
+
+  const customIcon = new LeafIcon({
+    iconUrl: require("../../Static/icons/pin.png"),
+    iconSize: [25, 41],
+    iconAnchor: [12.5, 41],
+    popupAnchor: [0, -41],
+    shadowUrl: require("../../Static/icons/pinShadow.png"),
+    shadowSize: [34.85, 23.61],
+    shadowAnchor: [0, 23],
+  })
+  
   return (
     <div className={style.mapContainer}>
       <div className={style.toggleContainer}>
@@ -18,7 +33,7 @@ const Map = ({comedyClubToDisplay, checked, setChecked}) => {
           />
           {
             comedyClubToDisplay.map((comedyClub, id) => (
-            <Marker position={comedyClub.position} key={id}>
+              <Marker position={comedyClub.position} key={id} icon={customIcon} className={style.marker}>
               <Popup>
                 <b>{comedyClub.name}</b>
                   <br/>
