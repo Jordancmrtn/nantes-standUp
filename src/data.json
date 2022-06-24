@@ -1,5 +1,6 @@
 [
   {
+    "id": "microComedyClub",
     "name": "Micro Comedy Club",
     "position": [47.20993987095461, -1.5647970262966966],
     "place": "Micro Comedy Club",
@@ -9,6 +10,7 @@
     "day": ["mercredi", "jeudi", "vendredi", "samedi"]
   },
   {
+    "id": "kissMeComedyClub",
     "name": "Kiss Me Comedy Club",
     "position": [47.213333846865446, -1.5604454425520666],
     "place": "Bar le Nomad",
@@ -19,6 +21,7 @@
     "hour": "20h30"
   },
   {
+    "id": "lundiDeMerde",
     "name": "Lundi de merde",
     "position": [47.21403505768024, -1.553496599990128],
     "place": "Bar le Poulp'",
@@ -29,6 +32,7 @@
     "hour": "20h et 21h15"
   },
   {
+    "id": "nouvellesBlagues",
     "name": "Nouvelles Blagues",
     "position": [47.213837237985665, -1.5541710004037412],
     "place": "Bar le Jungle'",
@@ -39,6 +43,7 @@
     "hour": "20h30"
   },
   {
+    "id": "poumComedy",
     "name": "Poum Comedy",
     "position": [47.216310639427526, -1.5523519726116142],
     "place": "Bar le Poum Poum T'chak'",
@@ -48,6 +53,7 @@
     "hour": "20h"
   },
   {
+    "id": "pizzaComedyClub",
     "name": "Pizza Comedy Club",
     "position": [47.23569052343749, -1.5827171460304355],
     "place": "Bar/Restaurant le Lieu Dit",
@@ -57,6 +63,7 @@
     "hour": "12h00"
   },
   {
+    "id": "westSideComedyClub",
     "name": "West Side Comedy Club",
     "position": [47.20026576051247, -1.5740239437761916],
     "place": "Bar Dock Yard",
@@ -67,6 +74,7 @@
     "hour": "20h30"
   },
   {
+    "id": "leGrenierABlagues",
     "name": "Le Grenier à blagues",
     "position": [47.22030101171824, -1.5495446131077746],
     "place": "Bar La Maison Café",
@@ -77,6 +85,7 @@
     "hour": "20h00"
   },
   {
+    "id": "whyNotComedyClub",
     "name": "Why not ? Comedy Club",
     "position": [47.217640699921255, -1.5567373726116012],
     "place": "Bar Le Montécito",
@@ -87,6 +96,7 @@
     "hour": "19h30"
   },
   {
+    "id": "caboulotComedyClub",
     "name": "Caboulot Comedy Club",
     "position": [47.20587196728428, -1.5608957879553857],
     "place": "Bar le Caboulot",
@@ -97,6 +107,7 @@
     "hour": "20h00"
   },
   {
+    "id": "laPauseStandUp",
     "name": "La Pause Stand Up",
     "position": [47.21356546755969, -1.5478605309951945],
     "place": "Théâtre du Sphinx",
@@ -107,6 +118,7 @@
     "hour": "17h00"
   },
   {
+    "id": "t3ComedyClub",
     "name": "T3 Comedy",
     "position": [47.20574330921241, -1.557267369313043],
     "place": "Bar le Bras de Fer",
