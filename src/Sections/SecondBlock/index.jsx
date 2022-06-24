@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ComedyClubCard from '../../Common/ComedyClubCard';
 import Map from '../../Common/Map';
-import Toggle from '../../Common/Toggle';
+import Grue from './assets/grue.svg';
 import ComedyClubs from "../../data.json";
 
 
@@ -16,6 +16,7 @@ const SecondBlock = () => {
 
   return (
     <section className={style.root}>
+      <img src={Grue} alt='' className={style.grue}/>
       <div className={style.dateContainer}>
         <p className={style.catchline}>Et ce soir ?</p>
         <div className={style.date}>
