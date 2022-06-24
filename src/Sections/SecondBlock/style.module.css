@@ -22,8 +22,6 @@
     filter: drop-shadow( 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe, 0 0 0rem #bc13fe, 0 0 0rem #bc13fe, inset 0 0 0.5rem #bc13fe)
 }
 
-
-
 .dateContainer {
     display: flex;
     flex-direction: column;
@@ -68,11 +66,14 @@
 }
 
 .comedyClubCardContainer {
+    z-index: 2;
     margin-bottom: 24px;
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin-bottom: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 @media screen and (min-width: 650px) {
@@ -84,7 +85,7 @@
     }
     .comedyClubCardContainer {
         flex-direction: row;
-        gap: 32px;
+        width: 80%;
     }
 }
 

@@ -25,8 +25,8 @@ const SecondBlock = () => {
       </div>
       <div className={style.comedyClubCardContainer}>
         {
-          comedyClubsOfTheDay.map((comedyClub, id) => (
-            <ComedyClubCard key={id} name={comedyClub.name} place={comedyClub.place} instagram={comedyClub.instagram} tickets={comedyClub.tickets} address={comedyClub.address} hour={comedyClub.hour} info={comedyClub.info}/>
+          comedyClubToDisplay.map((comedyClub, id) => (
+            <ComedyClubCard key={id} id={comedyClub.id} name={comedyClub.name} place={comedyClub.place} instagram={comedyClub.instagram} tickets={comedyClub.tickets} address={comedyClub.address} hour={comedyClub.hour} info={comedyClub.info}/>
           ))
         }
       </div>
