@@ -4,7 +4,6 @@ import Map from '../../Common/Map';
 import Grue from './assets/grue.svg';
 import ComedyClubs from "../../data.json";
 
-
 import style from './style.module.css';
 
 const SecondBlock = () => {
@@ -26,7 +25,7 @@ const SecondBlock = () => {
       <div className={style.comedyClubCardContainer}>
         {
           comedyClubToDisplay.map((comedyClub, id) => (
-            <ComedyClubCard key={id} id={comedyClub.id} name={comedyClub.name} place={comedyClub.place} instagram={comedyClub.instagram} tickets={comedyClub.tickets} address={comedyClub.address} hour={comedyClub.hour} info={comedyClub.info}/>
+            <ComedyClubCard key={id} id={comedyClub.id} name={comedyClub.name} place={comedyClub.place} instagram={comedyClub.instagram} tickets={comedyClub.tickets} address={comedyClub.address} hour={comedyClub.hour} infos={comedyClub.infos}/>
           ))
         }
       </div>

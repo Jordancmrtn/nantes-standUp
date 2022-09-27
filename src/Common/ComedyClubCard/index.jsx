@@ -5,14 +5,14 @@ import images from './assets'
 
 import style from './style.module.css';
 
-const ComedyClubCard = ({ name, address, instagram, tickets, hour, place, info, id }) => {
+const ComedyClubCard = ({ name, address, instagram, tickets, hour, place, infos, id }) => {
   return (
     <div className={style.cardContainer}>
       <img src={images[id]} alt="test"/>
       <b>{name}{hour && ` - ${hour}`}</b> <br/>
       {place} <br/>
       {address} <br/>
-      {info}  <br/>
+      {infos} <br/>
       <div className={style.instagramAndTicketContainer}>
         {instagram && <a href={instagram} target="_blank" rel="noreferrer"><Icon type="INSTAGRAM" color='white' className={style.icon} /></a>} <br/>
         {tickets &&
